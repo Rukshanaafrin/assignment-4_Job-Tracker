@@ -76,17 +76,17 @@
                 <!-- buttons/tab -->
                 <div class="flex gap-3">
 
-                    <button
+                    <button id="filterAll"
                         class="px-6 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-blue-400 text-white text-sm font-medium">
                         All
                     </button>
 
-                    <button
+                    <button id="filterInterview"
                         class="px-6 py-2 rounded-xl bg-base-100 border-base-300 text-gray-600 text-sm font-medium hover:bg-gray-200">
                         Interview
                     </button>
 
-                    <button
+                    <button id="filterRejected"
                         class="px-6 py-2 rounded-xl bg-base-100 border-base-300 text-gray-600 text-sm font-medium hover:bg-gray-200">
                         Rejected
                     </button>
@@ -102,14 +102,14 @@
 
         <!-- Available job card -->
 
-        <div class="space-y-4">
+        <div id="jobList" class="space-y-4">
 
             <!-- CARD 1 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
 
                     <!-- delete -->
-                    <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
+                    <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500 btn-delete">
                         <i class="fa-solid fa-trash"></i>
                     </button>
 
@@ -129,14 +129,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 2 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -157,14 +157,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 3 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -185,14 +185,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 4 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -213,14 +213,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 5 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -241,14 +241,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 6 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -269,14 +269,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 7 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -297,14 +297,14 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 8 -->
-            <div class="card bg-base-100 shadow-md">
+            <div class="card bg-base-100 shadow-md job-card" data-status="all">
                 <div class="card-body relative">
                     <button class="absolute right-5 top-5 text-gray-400 hover:text-red-500">
                         <i class="fa-solid fa-trash"></i>
@@ -325,18 +325,31 @@
                     </p>
 
                     <div class="flex gap-3 mt-3">
-                        <button class="btn btn-outline btn-success btn-sm">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error btn-sm">REJECTED</button>
+                        <button class="btn btn-outline btn-success btn-sm btn-interview">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error btn-sm btn-reject">REJECTED</button>
                     </div>
                 </div>
             </div>
 
         </div>
+
+
+        <!-- Empty -->
+        <div id="emptyState" class="hidden text-center py-16">
+            <i class="fa-solid fa-file text-5xl text-blue-400 mb-3"></i>
+            <p class="font-semibold">No jobs available</p>
+            <p class="text-sm text-gray-500">
+                Check back soon for new job opportunities
+            </p>
+        </div>
+
+
+
     </div>
 
 
     <script src="script/script.js"></script>
-    
+
 </body>
 
 </html>
