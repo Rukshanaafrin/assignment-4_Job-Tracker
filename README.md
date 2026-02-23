@@ -1,8 +1,7 @@
 
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-Ans:
-Difference between getElementById, getElementsByClassName, querySelector, and querySelectorAll:
+Ans: Difference between getElementById, getElementsByClassName, querySelector, and querySelectorAll:
 
 * getElementById() → selects one element by its id. It returns a single element and is very fast.
 
@@ -17,8 +16,7 @@ Difference between getElementById, getElementsByClassName, querySelector, and qu
 
 2. How do you create and insert a new element into the DOM?
 
-Ans:
-To create and insert a new element into the DOM, you follow three steps:
+Ans: To create and insert a new element into the DOM, you follow three steps:
 
 * Create the element using document.createElement().
 
@@ -37,8 +35,7 @@ This will create a new <p> element and add it to the webpage.
 
 3. What is Event Bubbling? And how does it work?
 
-Ans:
-Event Bubbling is a process where an event that happens on a child element automatically propagates upward through its parent elements.
+Ans: Event Bubbling is a process where an event that happens on a child element automatically propagates upward through its parent elements.
 
 How it works:
 When you click a nested element, the event first runs on the target element, then moves step by step to its parent, then to higher ancestors (like body and document).
@@ -61,8 +58,7 @@ If the child is clicked, both messages appear because the event bubbles up to th
 
 4. What is Event Delegation in JavaScript? Why is it useful?
 
-Ans:
-Event Delegation is a technique where you attach a single event listener to a parent element to handle events for its child elements using event bubbling.
+Ans: Event Delegation is a technique where you attach a single event listener to a parent element to handle events for its child elements using event bubbling.
 
 Instead of adding separate listeners to many child elements, the parent listens for the event and checks which child triggered it.
 
@@ -85,8 +81,7 @@ Here, one listener on the parent handles clicks for all .btn children.
 
 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-Ans:
-The two methods are used to control event behavior, but they do different things.
+Ans: The two methods are used to control event behavior, but they do different things.
 
 * preventDefault() stops the browser’s default action.
 Example: prevents form submission or link navigation.
